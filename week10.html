@@ -4,9 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Yugioh Deck Organizer</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="week10.js" defer></script>
 </head>
 <body>
-    
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+<div class="container pt-3 col-md-6">
+    <h2>Deck Insert</h2>
+    <form class="form-inline mt-3">
+      <label for="name">Deck Name:</label>
+      <input type="text" class="form-control" placeholder="Enter Name of Deck" id="dname">
+      <label for="lname">Deck Type:</label>
+      <input type="text" class="form-control" placeholder="Enter Type of Deck" id="tname">
+      <label for="course">Format:</label>
+      <input type="text" class="form-control" placeholder="Enter Format" id="fname">
+    </form>
+    <button type="submit" onclick="myFunction()" class="btn btn-primary mt-2">Submit</button>         
+    <table class="table table-dark table-hover mt-5" id="myTable">
+      <thead>
+        <tr>
+          <th>Deck</th>
+          <th>Type/Archtype</th>
+          <th>Format</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mekk-Knight</td>
+          <td>Aggro/Midrange</td>
+          <td>TCG-02/07/2022 (current)</td>
+        </tr>
+        <tr>
+          <td>Hero Beat</td>
+          <td>Midrange</td>
+          <td>Edison Format</td>
+        </tr>
+      </tbody>
+    </table>
+  
+  </div>
+
+
 </body>
 </html>
